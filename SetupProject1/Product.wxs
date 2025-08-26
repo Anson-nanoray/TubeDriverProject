@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+
+	<Product
+	  Id="*"
+	  Name="NanoRayUSBDriver v2.0"
+	  Language="1033"
+	  Version="1.0.0.0"
+	  Manufacturer="NanoRay Biotech Co., Ltd."
+	  UpgradeCode="{B52596D2-8D06-474A-9A87-277E9F3C4993}">
+
+		<Package InstallerVersion="200" Compressed="yes" />
+		<Media Id="1" Cabinet="media1.cab" EmbedCab="yes" />
+
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLFOLDER" Name="NanoRayUSBDriver v2.0">
+					<Component Id="cmp_AutoInstallCmd" Guid="*">
+						<File Id="file_AutoInstallCmd" Source="$(var.SourceDir)AutoInstall.cmd" />
+					</Component>
+
+					<Component Id="cmp_MchpcdcCat" Guid="*">
+						<File Id="file_MchpcdcCat" Source="$(var.SourceDir)mchpcdc.cat" />
+					</Component>
+
+					<Component Id="cmp_MchpcdcInf" Guid="*">
+						<File Id="file_MchpcdcInf" Source="$(var.SourceDir)mchpcdc.inf" />
+					</Component>
+
+					<Component Id="cmp_PreinstExe" Guid="*">
+						<File Id="file_PreinstExe" Source="$(var.SourceDir)Preinst.exe" />
+					</Component>
+
+					<Component Id="cmp_PreinstallCmd" Guid="*">
+						<File Id="file_PreinstallCmd" Source="$(var.SourceDir)Preinstall.cmd" />
+					</Component>
+
+					<Component Id="cmp_Uninst32Exe" Guid="*">
+						<File Id="file_Uninst32Exe" Source="$(var.SourceDir)Uninst32.exe" />
+					</Component>
+
+					<Component Id="cmp_Uninst32Cmd" Guid="*">
+						<File Id="file_Uninst32Cmd" Source="$(var.SourceDir)Uninstall32.cmd" />
+					</Component>
+
+					<Component Id="cmp_Uninst64Exe" Guid="*">
+						<File Id="file_Uninst64Exe" Source="$(var.SourceDir)Uninst64.exe" />
+					</Component>
+
+					<Component Id="cmp_Uninst64Cmd" Guid="*">
+						<File Id="file_Uninst64Cmd" Source="$(var.SourceDir)Uninstall64.cmd" />
+					</Component>
+
+					<Component Id="cmp_UsbIco" Guid="*">
+						<File Id="file_UsbIco" Source="$(var.SourceDir)usb.ico" />
+					</Component>
+				</Directory>
+			</Directory>
+		</Directory>
+
+		<CustomAction
+		  Id="Launch_AutoInstallCmd"
+		  Directory="INSTALLFOLDER"
+		  ExeCommand="cmd.exe /c &quot;[#file_AutoInstallCmd]&quot;"
+		  Execute="deferred"
+		  Return="ignore" />
+
+		<InstallExecuteSequence>
+			<Custom Action="Launch_AutoInstallCmd" After="InstallFiles">NOT Installed</Custom>
+		</InstallExecuteSequence>
+
+		<Feature Id="ProductFeature" Title="NanoRayUSBDriver v2.0" Level="1">
+			<ComponentRef Id="cmp_AutoInstallCmd" />
+			<ComponentRef Id="cmp_MchpcdcCat" />
+			<ComponentRef Id="cmp_MchpcdcInf" />
+			<ComponentRef Id="cmp_PreinstExe" />
+			<ComponentRef Id="cmp_PreinstallCmd" />
+			<ComponentRef Id="cmp_Uninst32Exe" />
+			<ComponentRef Id="cmp_Uninst32Cmd" />
+			<ComponentRef Id="cmp_Uninst64Exe" />
+			<ComponentRef Id="cmp_Uninst64Cmd" />
+			<ComponentRef Id="cmp_UsbIco" />
+		</Feature>
+	</Product>
+</Wix>

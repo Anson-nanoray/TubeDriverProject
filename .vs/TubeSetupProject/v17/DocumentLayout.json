@@ -1,0 +1,64 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\anson.lin\\source\\repos\\TubeSetupProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{174489F9-FA4F-4845-8607-57782ECEB264}|SetupProject1\\SetupProject1.wixproj|C:\\Users\\anson.lin\\source\\repos\\TubeSetupProject\\SetupProject1\\Product.wxs||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{174489F9-FA4F-4845-8607-57782ECEB264}|SetupProject1\\SetupProject1.wixproj|solutionrelative:SetupProject1\\Product.wxs||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|SetupProject1||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{174489F9-FA4F-4845-8607-57782ECEB264}|SetupProject1\\SetupProject1.wixproj|C:\\Users\\anson.lin\\source\\repos\\TubeSetupProject\\SetupProject1\\SetupProject1.wixproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e26242e0-4175-48e7-821e-fd0b17603811",
+      "RelativeMoniker": "D:0:0:{174489F9-FA4F-4845-8607-57782ECEB264}|SetupProject1\\SetupProject1.wixproj|solutionrelative:SetupProject1\\SetupProject1.wixproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e26242e0-4175-48e7-821e-fd0b17603811"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{79664857-03bf-4bca-aa54-ec998b3328f8}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SetupProject1",
+              "DocumentMoniker": "C:\\Users\\anson.lin\\source\\repos\\TubeSetupProject\\SetupProject1\\SetupProject1.wixproj",
+              "RelativeDocumentMoniker": "SetupProject1\\SetupProject1.wixproj",
+              "ToolTip": "C:\\Users\\anson.lin\\source\\repos\\TubeSetupProject\\SetupProject1\\SetupProject1.wixproj",
+              "RelativeToolTip": "SetupProject1\\SetupProject1.wixproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-25T07:39:11.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Product.wxs",
+              "DocumentMoniker": "C:\\Users\\anson.lin\\source\\repos\\TubeSetupProject\\SetupProject1\\Product.wxs",
+              "RelativeDocumentMoniker": "SetupProject1\\Product.wxs",
+              "ToolTip": "C:\\Users\\anson.lin\\source\\repos\\TubeSetupProject\\SetupProject1\\Product.wxs",
+              "RelativeToolTip": "SetupProject1\\Product.wxs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAswDkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-25T07:37:52.863Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
