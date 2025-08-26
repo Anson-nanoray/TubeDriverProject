@@ -1,0 +1,2 @@
+C:\Users\anson.lin\source\repos\TubeDriverProject\SetupProject1\bin\Release\NanoRayUSBDriver v2.0.msi
+C:\Users\anson.lin\source\repos\TubeDriverProject\SetupProject1\bin\Release\NanoRayUSBDriver v2.0.wixpdb

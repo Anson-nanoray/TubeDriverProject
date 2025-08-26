@@ -1,0 +1,10 @@
+SourceFiles\AutoInstall.cmd
+SourceFiles\mchpcdc.cat
+SourceFiles\mchpcdc.inf
+SourceFiles\Preinstall.cmd
+SourceFiles\Preinst.exe
+SourceFiles\Uninstall32.cmd
+SourceFiles\Uninst32.exe
+SourceFiles\Uninstall64.cmd
+SourceFiles\Uninst64.exe
+SourceFiles\usb.ico
